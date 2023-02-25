@@ -1,0 +1,17 @@
+name: Using github CLI on a workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run Github CLI
+        run: |
+          echo ${{secrets.GITHUB_TOKEN}} > .token,
+          gh auth login --with-token < .token
+          gh issue list
