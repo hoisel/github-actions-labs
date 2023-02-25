@@ -12,6 +12,6 @@ jobs:
 
       - name: Run Github CLI
         run: |
-          echo ${{secrets.GITHUB_TOKEN}} > .token,
+          echo ${{secrets.GH_CLI_TOKEN}} > .token,
           gh auth login --with-token < .token
           gh issue list
