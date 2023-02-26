@@ -20,7 +20,3 @@ jobs:
             This is a multi-line test comment
             - With GitHub **Markdown** :sparkles:
             - Created by [create-or-update-comment][1]
-
-            [1]: Olá!
-          reactions: '+1'
-
