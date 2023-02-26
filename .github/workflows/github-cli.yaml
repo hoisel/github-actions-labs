@@ -4,12 +4,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  Build:
     runs-on: ubuntu-latest
-
+    
     steps:
       - uses: actions/checkout@v3
-
       - name: Run Github CLI
         run: |
           echo ${{secrets.GH_CLI_TOKEN}} > .token
